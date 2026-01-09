@@ -1,0 +1,253 @@
+/* ===== Órbita de Tecnologías ===== */
+/* Estilos para la foto de perfil con logos orbitando alrededor */
+
+.orbit-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+
+.orbit-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(139, 92, 246, 0.5);
+    box-shadow: 
+        0 0 30px rgba(139, 92, 246, 0.3),
+        0 0 60px rgba(139, 92, 246, 0.1);
+    z-index: 10;
+}
+
+.orbit-center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orbit-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: orbitRotate 25s linear infinite;
+}
+
+.orbit-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    background: rgba(30, 41, 59, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Posición en el círculo */
+    transform: rotate(calc(360deg / 10 * var(--i))) translateX(100px);
+    transition: box-shadow 0.3s ease;
+}
+
+/* El icono interno contra-rota para mantenerse derecho */
+.orbit-icon img {
+    width: 35px;
+    height: 35px;
+    /* Aplica rotación inicial desde el inicio */
+    transform: rotate(var(--initial-rotation, 0deg));
+    /* Contra-rotación sincronizada con el orbit-ring */
+    animation: counterRotateImg 25s linear infinite;
+}
+
+.orbit-icon:hover,
+.orbit-icon:focus {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+    z-index: 20;
+    outline: none;
+}
+
+.orbit-icon:hover img,
+.orbit-icon:focus img {
+    transform: scale(1.2);
+}
+
+.orbit-icon:focus-visible {
+    outline: 2px solid #a78bfa;
+    outline-offset: 4px;
+}
+
+/* Tooltip */
+.orbit-tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    background: rgba(15, 23, 42, 0.95);
+    color: #e2e8f0;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Animación de contra-rotación */
+    animation: counterRotateTooltip 25s linear infinite;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.orbit-icon:hover .orbit-tooltip,
+.orbit-icon:focus .orbit-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ===== Animaciones ===== */
+@keyframes orbitRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Contra-rotación para mantener los iconos siempre derechos */
+@keyframes counterRotateImg {
+    from {
+        transform: rotate(var(--initial-rotation));
+    }
+    to {
+        transform: rotate(calc(var(--initial-rotation) - 360deg));
+    }
+}
+
+/* Contra-rotación para mantener los tooltips siempre derechos */
+@keyframes counterRotateTooltip {
+    from {
+        transform: translateX(-50%) rotate(var(--initial-rotation));
+    }
+    to {
+        transform: translateX(-50%) rotate(calc(var(--initial-rotation) - 360deg));
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .orbit-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .orbit-icon {
+        width: 45px;
+        height: 45px;
+        margin: -22.5px;
+    }
+    
+    .orbit-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Modo móvil: cuadrícula debajo de la imagen */
+    .orbit-container.orbit-mobile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .orbit-mobile .orbit-center {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .orbit-mobile .orbit-ring {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.75rem;
+        animation: none;
+        padding: 1rem;
+    }
+    
+    .orbit-mobile .orbit-icon {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0;
+        transform: none !important;
+        animation: none !important;
+        width: 55px;
+        height: 55px;
+        justify-self: center;
+    }
+    
+    .orbit-mobile .orbit-icon:hover,
+    .orbit-mobile .orbit-icon:focus {
+        transform: scale(1.15) !important;
+    }
+    
+    .orbit-mobile .orbit-icon img {
+        animation: none !important;
+        transform: none !important;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .orbit-mobile .orbit-icon:hover img,
+    .orbit-mobile .orbit-icon:focus img {
+        transform: scale(1.1) !important;
+    }
+    
+    .orbit-mobile .orbit-tooltip {
+        bottom: -25px;
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+        transform: translateX(-50%) !important;
+        animation: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .orbit-mobile .orbit-ring {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .orbit-mobile .orbit-center {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .orbit-mobile .orbit-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .orbit-mobile .orbit-icon img {
+        width: 28px;
+        height: 28px;
+    }
+}
