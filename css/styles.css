@@ -23,7 +23,8 @@ html {
 
 body {
     font-family: var(--font-main);
-    background-color: var(--color-bg);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+    background-attachment: fixed;
     color: var(--color-text);
     line-height: 1.6;
 }
@@ -320,7 +321,6 @@ img {
     min-height: 100vh;
     height: 100vh;
     padding: 3rem 2rem;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1023,7 +1023,6 @@ img {
 .footer {
     text-align: center;
     padding: 2rem;
-    background: var(--color-bg-light);
     color: var(--color-text-muted);
 }
 
