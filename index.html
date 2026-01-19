@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio de JavitoWazowsky - Desarrollador Web">
     <title>Mi Zona, MiCabezona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/orbit.css">
     <link rel="stylesheet" href="css/cursor.css">
@@ -13,14 +16,14 @@
     <!-- Cursor personalizado -->
     <div class="cursor-follower"></div>
     
-    <!-- Hero Section - Dos Columnas -->
+    <!-- Seccion Hero - Dos Columnas -->
     <section id="inicio" class="hero">
         <!-- Buzz apuntando con su laser -->
         <img src="assets/images/laser.webp" alt="" class="laser-decoration">
         <div class="laser-message">Buzz apunta a tu curiosidad tecnológica</div>
         
         <div class="hero-container animate">
-            <!-- Columna Izquierda - Órbita -->
+            <!-- Columna Izquierda - orbita -->
             <div class="hero-left">
                 <div class="orbit-container">
                     <!-- Imagen central -->
@@ -50,9 +53,9 @@
                         <span>Ver Portafolio</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </a>
-                    <a href="#contacto" class="btn btn-secondary">
-                        <span>Contáctame</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <a href="#sobre-mi" class="btn btn-secondary">
+                        <span>Sobre mí</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
                     </a>
                 </div>
                 
@@ -134,14 +137,39 @@
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section">
+    <!-- Certificaciones -->
+    <section id="certificaciones" class="section">
         <div class="container">
-            <h2 class="section-title animate">Contacto</h2>
-            <div class="contact-links animate">
-                <a href="mailto:tu@email.com">📧 Email</a>
-                <a href="https://github.com/tuusuario" target="_blank">💻 GitHub</a>
-                <a href="https://linkedin.com/in/tuusuario" target="_blank">💼 LinkedIn</a>
+            <h2 class="section-title animate">Certificaciones</h2>
+            <div class="certifications-grid animate">
+                <div class="certification-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Nombre de la Certificación</h3>
+                    <p class="cert-issuer">Institución</p>
+                    <p class="cert-date">Año</p>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Nombre de la Certificación</h3>
+                    <p class="cert-issuer">Institución</p>
+                    <p class="cert-date">Año</p>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Nombre de la Certificación</h3>
+                    <p class="cert-issuer">Institución</p>
+                    <p class="cert-date">Año</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publicaciones de LinkedIn -->
+    <section id="publicaciones" class="section">
+        <div class="container">
+            <h2 class="section-title animate">Mis Publicaciones en LinkedIn</h2>
+            <div class="linkedin-posts animate">
+                <!-- Las publicaciones se cargan dinámicamente desde data/linkedin-posts.json -->
             </div>
         </div>
     </section>

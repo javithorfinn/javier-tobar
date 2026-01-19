@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Título de la publicación 1",
+        "content": "Vista previa del contenido de la primera publicación en LinkedIn. Aquí puedes describir tus logros, proyectos o reflexiones profesionales...",
+        "date": "Enero 2026",
+        "url": "https://www.linkedin.com/posts/tu-usuario_post-1"
+    },
+    {
+        "id": 2,
+        "title": "Título de la publicación 2",
+        "content": "Vista previa del contenido de la segunda publicación en LinkedIn. Comparte tus experiencias y aprendizajes en el desarrollo web...",
+        "date": "Diciembre 2025",
+        "url": "https://www.linkedin.com/posts/tu-usuario_post-2"
+    },
+    {
+        "id": 3,
+        "title": "Título de la publicación 3",
+        "content": "Vista previa del contenido de la tercera publicación en LinkedIn. Habla sobre tecnologías, metodologías o proyectos interesantes...",
+        "date": "Noviembre 2025",
+        "url": "https://www.linkedin.com/posts/tu-usuario_post-3"
+    }
+]

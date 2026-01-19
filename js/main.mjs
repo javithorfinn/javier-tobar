@@ -7,10 +7,17 @@ import { initOrbit } from './modules/orbit.mjs';
 import { initCursor } from './modules/cursor.mjs';
 // import { initEyes } from './modules/eyes.mjs'; // Ojos desactivados temporalmente
 
+// Módulos de secciones
+import { initAbout } from './modules/about.mjs';
+import { initProjects } from './modules/projects.mjs';
+import { initCertifications } from './modules/certifications.mjs';
+import { initLinkedInPosts } from './modules/linkedin-posts.mjs';
+
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Portafolio cargado');
     
+    // Módulos generales
     initNavigation();
     initAnimations();
     initCarousel();
@@ -18,4 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initOrbit();
     initCursor();
     // initEyes(); // Ojos desactivados temporalmente
+    
+    // Módulos de secciones
+    initAbout();
+    initProjects();
+    initCertifications();
+    initLinkedInPosts();
 });

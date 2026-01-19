@@ -146,108 +146,125 @@
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .orbit-container {
-        width: 280px;
-        height: 280px;
+        width: 240px;
+        height: 240px;
+    }
+    
+    .orbit-center {
+        width: 100px;
+        height: 100px;
+        border: 3px solid rgba(139, 92, 246, 0.5);
     }
     
     .orbit-icon {
-        width: 45px;
-        height: 45px;
-        margin: -22.5px;
+        width: 40px;
+        height: 40px;
+        margin: -20px;
+        transform: rotate(calc(360deg / 10 * var(--i))) translateX(80px);
     }
     
     .orbit-icon img {
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
     }
     
-    /* Modo móvil: cuadrícula debajo de la imagen */
-    .orbit-container.orbit-mobile {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-    .orbit-mobile .orbit-center {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: 120px;
-        height: 120px;
-    }
-    
-    .orbit-mobile .orbit-ring {
-        position: relative;
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 0.75rem;
-        animation: none;
-        padding: 1rem;
-    }
-    
-    .orbit-mobile .orbit-icon {
-        position: relative;
-        top: auto;
-        left: auto;
-        margin: 0;
-        transform: none !important;
-        animation: none !important;
-        width: 55px;
-        height: 55px;
-        justify-self: center;
-    }
-    
-    .orbit-mobile .orbit-icon:hover,
-    .orbit-mobile .orbit-icon:focus {
-        transform: scale(1.15) !important;
-    }
-    
-    .orbit-mobile .orbit-icon img {
-        animation: none !important;
-        transform: none !important;
-        width: 32px;
-        height: 32px;
-    }
-    
-    .orbit-mobile .orbit-icon:hover img,
-    .orbit-mobile .orbit-icon:focus img {
-        transform: scale(1.1) !important;
-    }
-    
-    .orbit-mobile .orbit-tooltip {
-        bottom: -25px;
-        font-size: 0.7rem;
+    .orbit-tooltip {
+        font-size: 0.65rem;
         padding: 0.25rem 0.5rem;
-        transform: translateX(-50%) !important;
-        animation: none !important;
+        bottom: -25px;
     }
 }
 
 @media (max-width: 480px) {
-    .orbit-mobile .orbit-ring {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0.5rem;
+    .orbit-container {
+        width: 200px;
+        height: 200px;
     }
     
-    .orbit-mobile .orbit-center {
-        width: 100px;
-        height: 100px;
+    .orbit-center {
+        width: 80px;
+        height: 80px;
+        border: 2px solid rgba(139, 92, 246, 0.5);
     }
     
-    .orbit-mobile .orbit-icon {
-        width: 48px;
-        height: 48px;
+    .orbit-icon {
+        width: 35px;
+        height: 35px;
+        margin: -17.5px;
+        transform: rotate(calc(360deg / 10 * var(--i))) translateX(65px);
     }
     
-    .orbit-mobile .orbit-icon img {
+    .orbit-icon img {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .orbit-tooltip {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+        bottom: -22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .orbit-container {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .orbit-center {
+        width: 70px;
+        height: 70px;
+        border: 2px solid rgba(139, 92, 246, 0.5);
+    }
+    
+    .orbit-icon {
+        width: 32px;
+        height: 32px;
+        margin: -16px;
+        transform: rotate(calc(360deg / 10 * var(--i))) translateX(58px);
+    }
+    
+    .orbit-icon img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .orbit-tooltip {
+        font-size: 0.55rem;
+        padding: 0.2rem 0.35rem;
+        bottom: -20px;
+    }
+}
+
+/* Para pantallas muy pequeñas (mínimo 182px como mencionaste) */
+@media (max-width: 280px) {
+    .orbit-container {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .orbit-center {
+        width: 60px;
+        height: 60px;
+        border: 2px solid rgba(139, 92, 246, 0.5);
+    }
+    
+    .orbit-icon {
         width: 28px;
         height: 28px;
+        margin: -14px;
+        transform: rotate(calc(360deg / 10 * var(--i))) translateX(52px);
+    }
+    
+    .orbit-icon img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .orbit-tooltip {
+        font-size: 0.5rem;
+        padding: 0.15rem 0.3rem;
+        bottom: -18px;
     }
 }
