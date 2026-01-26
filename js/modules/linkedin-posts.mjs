@@ -1,4 +1,4 @@
-// Módulo: Publicaciones de LinkedIn
+// Modulo: Publicaciones de LinkedIn
 export function initLinkedInPosts() {
     console.log('💼 Módulo LinkedIn Posts inicializado');
     

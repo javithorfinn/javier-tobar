@@ -1,6 +1,6 @@
-// Módulo de animaciones
+// Modulo de animaciones
 export function initAnimations() {
-    // Animación de fade-in cuando los elementos entran en viewport
+    // Animacion de fade-in cuando los elementos entran en viewport
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -23,7 +23,7 @@ export function initAnimations() {
     console.log('✅ Animaciones inicializadas');
 }
 
-// Función para animar un elemento específico
+// Funcion para animar un elemento especifico
 export function fadeIn(element, duration = 500) {
     element.style.opacity = 0;
     element.style.transition = `opacity ${duration}ms ease`;

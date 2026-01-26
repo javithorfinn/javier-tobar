@@ -1,4 +1,4 @@
-// Módulo de carrusel de habilidades
+// Modulo de carrusel de habilidades
 export function initSkills() {
     const skillsTracks = document.querySelectorAll('.skills-track');
     
@@ -50,9 +50,9 @@ export function initSkills() {
         if (!skills) return;
         
         const skillsHTML = skills.map(createSkillItem).join('');
-        track.innerHTML = skillsHTML + skillsHTML + skillsHTML; // Triplicar para loop más suave
+        track.innerHTML = skillsHTML + skillsHTML + skillsHTML; // Triplicar para loop mas suave
         
-        // Aplicar dirección de animación
+        // Aplicar direccion de animacion
         const direction = track.dataset.direction || 'left';
         if (direction === 'right') {
             track.style.animationDirection = 'reverse';

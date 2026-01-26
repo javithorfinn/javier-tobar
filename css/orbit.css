@@ -1,4 +1,4 @@
-/* ===== Órbita de Tecnologías ===== */
+/* ===== Orbita de Tecnologias ===== */
 /* Estilos para la foto de perfil con logos orbitando alrededor */
 
 .orbit-container {
@@ -52,7 +52,7 @@
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    /* Posición en el círculo */
+    /* Posicion en el circulo */
     transform: rotate(calc(360deg / 10 * var(--i))) translateX(100px);
     transition: box-shadow 0.3s ease;
 }
@@ -61,9 +61,9 @@
 .orbit-icon img {
     width: 35px;
     height: 35px;
-    /* Aplica rotación inicial desde el inicio */
+    /* Aplica rotacion inicial desde el inicio */
     transform: rotate(var(--initial-rotation, 0deg));
-    /* Contra-rotación sincronizada con el orbit-ring */
+    /* Contra-rotacion sincronizada con el orbit-ring */
     animation: counterRotateImg 25s linear infinite;
 }
 
@@ -101,7 +101,7 @@
     transition: opacity 0.2s ease, visibility 0.2s ease;
     pointer-events: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    /* Animación de contra-rotación */
+    /* Animacion de contra-rotacion */
     animation: counterRotateTooltip 25s linear infinite;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     z-index: 100;
@@ -123,7 +123,7 @@
     }
 }
 
-/* Contra-rotación para mantener los iconos siempre derechos */
+/* Contra-rotacion para mantener los iconos siempre derechos */
 @keyframes counterRotateImg {
     from {
         transform: rotate(var(--initial-rotation));
@@ -133,7 +133,7 @@
     }
 }
 
-/* Contra-rotación para mantener los tooltips siempre derechos */
+/* Contra-rotacion para mantener los tooltips siempre derechos */
 @keyframes counterRotateTooltip {
     from {
         transform: translateX(-50%) rotate(var(--initial-rotation));
@@ -237,7 +237,7 @@
     }
 }
 
-/* Para pantallas muy pequeñas (mínimo 182px como mencionaste) */
+/* Para pantallas muy pequenas (minimo 182px como mencionaste) */
 @media (max-width: 280px) {
     .orbit-container {
         width: 160px;

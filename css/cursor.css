@@ -1,5 +1,5 @@
 /* ===== Cursor Personalizado ===== */
-/* Punto rojo que sigue el cursor del mouse con desaceleración inteligente */
+/* Punto rojo que sigue el cursor del mouse con desaceleracion inteligente */
 
 .cursor-follower {
     position: fixed;
@@ -16,7 +16,7 @@
     transition: transform 0.1s ease;
 }
 
-/* Ocultar en dispositivos móviles */
+/* Ocultar en dispositivos moviles */
 @media (max-width: 768px) {
     .cursor-follower {
         display: none;

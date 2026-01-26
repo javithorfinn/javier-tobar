@@ -1,6 +1,6 @@
 // Utilidades generales
 
-// Debounce - limita la frecuencia de ejecución de una función
+// Debounce - limita la frecuencia de ejecucion de una funcion
 export function debounce(func, wait = 250) {
     let timeout;
     return function executedFunction(...args) {
@@ -13,7 +13,7 @@ export function debounce(func, wait = 250) {
     };
 }
 
-// Throttle - ejecuta la función máximo una vez cada X ms
+// Throttle - ejecuta la funcion maximo una vez cada X ms
 export function throttle(func, limit = 250) {
     let inThrottle;
     return function(...args) {
@@ -25,11 +25,11 @@ export function throttle(func, limit = 250) {
     };
 }
 
-// Seleccionar elemento(s) más fácilmente
+// Seleccionar elemento(s) mas facilmente
 export const $ = (selector) => document.querySelector(selector);
 export const $$ = (selector) => document.querySelectorAll(selector);
 
-// Verificar si un elemento está en el viewport
+// Verificar si un elemento esta en el viewport
 export function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (

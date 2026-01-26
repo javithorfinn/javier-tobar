@@ -1,18 +1,18 @@
-// Módulo: Certificaciones
+// Modulo: Certificaciones
 export function initCertifications() {
     console.log('🎓 Módulo Certificaciones inicializado');
     
     const certificationsSection = document.querySelector('#certificaciones');
     if (!certificationsSection) return;
     
-    // Aquí puedes agregar lógica específica para certificaciones
+    // Aqui puedes agregar logica especifica para certificaciones
     // Ejemplo: animaciones al scroll, modales con detalles, etc.
     
-    // Si tienes datos de certificaciones en JSON, puedes cargarlos aquí
+    // Si tienes datos de certificaciones en JSON, puedes cargarlos aqui
     // loadCertifications();
 }
 
-// Función para cargar certificaciones desde un archivo JSON (opcional)
+// Funcion para cargar certificaciones desde un archivo JSON (opcional)
 async function loadCertifications() {
     try {
         const response = await fetch('data/certifications.json');
