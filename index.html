@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/orbit.css">
     <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/coverflow.css">
 </head>
 <body>
     <!-- Cursor personalizado -->
@@ -53,10 +55,6 @@
                         <span>Ver Portafolio</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </a>
-                    <a href="#sobre-mi" class="btn btn-secondary">
-                        <span>Sobre mí</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
-                    </a>
                 </div>
                 
                 <!-- Enlaces Sociales -->
@@ -88,14 +86,6 @@
         </div>
     </section>
 
-    <!-- Sobre mi -->
-    <section id="sobre-mi" class="section">
-        <div class="container">
-            <h2 class="section-title animate">Sobre mí</h2>
-            <p class="animate">Matatan nacido en el año 1998 </p>
-        </div>
-    </section>
-
     <!-- Proyectos -->
     <section id="proyectos" class="section">
         <div class="container">
@@ -107,11 +97,11 @@
                     <div class="project-spotlight"></div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">Sistema de Gestion</h3>
+                            <h3 class="project-title">Sistema de Gestión</h3>
                             <span class="project-date">2024</span>
                         </div>
                         <p class="project-role">FULL STACK PROJECT</p>
-                        <p class="project-description">Sistema completo de gestion empresarial con dashboard interactivo y reportes en tiempo real.</p>
+                        <p class="project-description">Sistema completo de gestión empresarial con dashboard interactivo y reportes en tiempo real.</p>
                         
                         <div class="project-tech">
                             <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" title="Python">
@@ -132,7 +122,7 @@
                             <span class="project-date">2023 - 2024</span>
                         </div>
                         <p class="project-role">BACKEND DEVELOPER</p>
-                        <p class="project-description">Plataforma de comercio electronico con integracion de pagos y gestion de inventario.</p>
+                        <p class="project-description">Plataforma de comercio electrónico con integración de pagos y gestión de inventario.</p>
                         
                         <div class="project-tech">
                             <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" title="Python">
@@ -152,7 +142,7 @@
                             <span class="project-date">2023</span>
                         </div>
                         <p class="project-role">FRONTEND DEVELOPER</p>
-                        <p class="project-description">Aplicacion movil para gestion de tareas con sincronizacion en tiempo real.</p>
+                        <p class="project-description">Aplicación móvil para gestión de tareas con sincronización en tiempo real.</p>
                         
                         <div class="project-tech">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin">
@@ -171,7 +161,7 @@
                             <span class="project-date">2024</span>
                         </div>
                         <p class="project-role">WEB DEVELOPER</p>
-                        <p class="project-description">Sitio web personal con animaciones y diseno responsive moderno.</p>
+                        <p class="project-description">Sitio web personal con animaciones y diseño responsive moderno.</p>
                         
                         <div class="project-tech">
                             <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
@@ -188,25 +178,68 @@
     <section id="certificaciones" class="section">
         <div class="container">
             <h2 class="section-title animate">Certificaciones</h2>
-            <div class="certifications-grid animate">
-                <div class="certification-card">
-                    <div class="cert-icon">🎓</div>
-                    <h3>Nombre de la Certificación</h3>
-                    <p class="cert-issuer">Institución</p>
-                    <p class="cert-date">Año</p>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto1.jpg" alt="Certificación 1">
+                        <div class="coverflow-info">
+                            <h3>Certificación 1</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto2.jpg" alt="Certificación 2">
+                        <div class="coverflow-info">
+                            <h3>Certificación 2</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto3.jpg" alt="Certificación 3">
+                        <div class="coverflow-info">
+                            <h3>Certificación 3</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto4.jpg" alt="Certificación 4">
+                        <div class="coverflow-info">
+                            <h3>Certificación 4</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto5.jpg" alt="Certificación 5">
+                        <div class="coverflow-info">
+                            <h3>Certificación 5</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto6.jpg" alt="Certificación 6">
+                        <div class="coverflow-info">
+                            <h3>Certificación 6</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto7.jpg" alt="Certificación 7">
+                        <div class="coverflow-info">
+                            <h3>Certificación 7</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/proyecto8.jpg" alt="Certificación 8">
+                        <div class="coverflow-info">
+                            <h3>Certificación 8</h3>
+                            <p>Descripción de la certificación - Próximamente</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <div class="cert-icon">🎓</div>
-                    <h3>Nombre de la Certificación</h3>
-                    <p class="cert-issuer">Institución</p>
-                    <p class="cert-date">Año</p>
-                </div>
-                <div class="certification-card">
-                    <div class="cert-icon">🎓</div>
-                    <h3>Nombre de la Certificación</h3>
-                    <p class="cert-issuer">Institución</p>
-                    <p class="cert-date">Año</p>
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -228,5 +261,6 @@
 
     <!-- Scripts como modulos -->
     <script type="module" src="js/main.mjs"></script>
+    <script type="module" src="js/coverflow.mjs"></script>
 </body>
 </html>

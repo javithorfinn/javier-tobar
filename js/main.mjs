@@ -8,7 +8,6 @@ import { initCursor } from './modules/cursor.mjs';
 // import { initEyes } from './modules/eyes.mjs'; // Ojos desactivados temporalmente
 
 // Módulos de secciones
-import { initAbout } from './modules/about.mjs';
 import { initProjects } from './modules/projects.mjs';
 import { initCertifications } from './modules/certifications.mjs';
 import { initLinkedInPosts } from './modules/linkedin-posts.mjs';
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // initEyes(); // Ojos desactivados temporalmente
     
     // Módulos de secciones
-    initAbout();
     initProjects();
     initCertifications();
     initLinkedInPosts();
