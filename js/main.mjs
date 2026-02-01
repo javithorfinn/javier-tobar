@@ -5,6 +5,7 @@ import { initCarousel } from './modules/carousel.mjs';
 import { initSkills } from './modules/skills.mjs';
 import { initOrbit } from './modules/orbit.mjs';
 import { initCursor } from './modules/cursor.mjs';
+import { initCardStack } from './modules/tarjetero.mjs';
 // import { initEyes } from './modules/eyes.mjs'; // Ojos desactivados temporalmente
 
 // Módulos de secciones
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSkills();
     initOrbit();
     initCursor();
+    initCardStack();
     // initEyes(); // Ojos desactivados temporalmente
     
     // Módulos de secciones
