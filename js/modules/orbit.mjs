@@ -8,7 +8,7 @@ export function initOrbit() {
     // Lista de tecnologias - facil de modificar
     const technologies = [
         { name: 'Python', icon: 'python-icon', url: 'https://techstack-generator.vercel.app/python-icon.svg' },
-        { name: 'Django', icon: 'django-icon', url: 'https://techstack-generator.vercel.app/django-icon.svg' },
+        { name: 'Node.js', icon: 'nodejs-icon', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
         { name: 'JavaScript', icon: 'js-icon', url: 'https://techstack-generator.vercel.app/js-icon.svg' },
         { name: 'HTML5', icon: 'html5-icon', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
         { name: 'CSS3', icon: 'css3-icon', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
