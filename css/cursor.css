@@ -55,16 +55,10 @@
     pointer-events: none;
 }
 
-/* Responsive */
+/* Responsive - Ocultar en dispositivos móviles */
 @media (max-width: 768px) {
-    .laser-decoration {
-        width: 120px;
-    }
-    
+    .laser-decoration,
     .laser-message {
-        top: 40px;
-        left: 130px;
-        font-size: 0.7rem;
-        padding: 0.4rem 0.6rem;
+        display: none;
     }
 }

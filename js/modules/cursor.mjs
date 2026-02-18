@@ -1,5 +1,11 @@
 // Módulo de cursor personalizado con punto rojo que sigue el mouse
 export function initCursor() {
+    // No inicializar en dispositivos móviles
+    if (window.innerWidth <= 768 || 'ontouchstart' in window) {
+        console.log('📱 Cursor personalizado deshabilitado en dispositivos móviles');
+        return;
+    }
+    
     const cursor = document.querySelector('.cursor-follower');
     
     if (!cursor) return;
