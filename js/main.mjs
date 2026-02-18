@@ -10,7 +10,6 @@ import { initCardStack } from './modules/tarjetero.mjs';
 
 // Módulos de secciones
 import { initProjects } from './modules/projects.mjs';
-import { initCertifications } from './modules/certifications.mjs';
 import { initLinkedInPosts } from './modules/linkedin-posts.mjs';
 
 // Inicializar cuando el DOM esté listo
@@ -29,6 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Módulos de secciones
     initProjects();
-    initCertifications();
     initLinkedInPosts();
 });
