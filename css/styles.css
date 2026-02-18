@@ -128,11 +128,16 @@ img {
 }
 
 .hero-description {
-    font-size: 0.875rem;
+    font-size: 1.05rem;
     color: #cbd5e1;
     line-height: 1.35;
     margin: 0;
     max-width: 100%;
+}
+
+.hero-description strong {
+    color: #a78bfa;
+    font-weight: 600;
 }
 
 /* Botones de Accion */
