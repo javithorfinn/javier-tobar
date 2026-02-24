@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de JavitoWazowsky - Desarrollador Web">
-    <title>Portafolio Javier Tobar</title>
+    <meta name="description" content="Currículum - Javier Tobar - Frontend Developer">
+    <title>Currículum - Javier Tobar</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
@@ -19,293 +19,292 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/orbit.css">
     <link rel="stylesheet" href="css/cursor.css">
-    <link rel="stylesheet" href="css/tarjetero.css">
+    <link rel="stylesheet" href="css/resume.css">
 </head>
 <body>
     <!-- Cursor personalizado -->
     <div class="cursor-follower"></div>
     
-    <!-- Seccion Hero - Dos Columnas -->
-    <section id="inicio" class="hero">
-        <!-- Buzz apuntando con su laser -->
-        <img src="assets/images/laser.webp" alt="" class="laser-decoration">
-        <div class="laser-message">Buzz apunta a tu curiosidad tecnológica</div>
-        
-        <div class="hero-container animate">
-            <!-- Columna Izquierda - orbita -->
-            <div class="hero-left">
+    <div class="container">
+        <!-- Main Content -->
+        <div class="resume-content">
+            <!-- Left Column - Profile -->
+            <aside class="profile-section">
                 <div class="orbit-container">
                     <!-- Imagen central -->
                     <div class="orbit-center">
-                        <img src="assets/images/serio1.png" alt="Javier Tobar Villagra">
+                        <img src="assets/images/serio1.png" alt="Javier Tobar">
                     </div>
                     
                     <!-- Orbita de iconos (generado por JS) -->
                     <div class="orbit-ring"></div>
                 </div>
-            </div>
-            
-            <!-- Columna Derecha - Info -->
-            <div class="hero-right">
-                <h1 class="hero-title">Javier Tobar Villagra</h1>
-                <p class="hero-subtitle">Analista Programador · Desarrollador FULLSTACK</p>
-                
-                <p class="hero-description">
-                    Soy un desarrollador junior full stack con experiencia en front-end y back-end, apasionado por transformar ideas en soluciones digitales funcionales y atractivas. Me motiva enfrentar desafíos técnicos con un enfoque <strong>práctico y documentado</strong>, siempre buscando optimizar procesos y entregar proyectos confiables. Además, cuento con experiencia en la <strong>creación e integración de APIs</strong>, conectando sistemas y potenciando aplicaciones para lograr soluciones más completas y escalables.
-                </p>
-                
-                <!-- Botones de Accion -->
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">
-                        <span>Ver Portafolio</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                    </a>
-                </div>
-                
-                <!-- Enlaces Sociales -->
-                <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/javier-tobar-villagra-08b922384/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="social-link"
-                       aria-label="LinkedIn de Javier Tobar Villagra">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/javithorfinn" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       class="social-link"
-                       aria-label="GitHub de Javier Tobar Villagra">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="mailto:Javier.tobarvillagra@gmail.com" 
-                       class="social-link"
-                       aria-label="Enviar correo a Javier Tobar Villagra">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                        <span>Email</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <h1 class="name">Javier Tobar</h1>
+                <p class="title">Full Stack Developer</p>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="section">
-        <div class="container">
-            <h2 class="section-title animate">Mis Proyectos</h2>
-            <p class="section-subtitle animate" style="text-align: center; margin-top: 5px; margin-bottom: 20px; opacity: 0.7; font-size: 0.85rem;">Click para ver</p>
-            
-            <div class="projects-grid animate">
-                <!-- Proyecto 1 -->
-                <a href="https://pascale-closet.vercel.app/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-spotlight"></div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Pascale E-Commerce</h3>
-                            <span class="project-date">2023 - 2024</span>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                        <div>
+                            <span class="label">E-MAIL</span>
+                            <span class="value">javier.tobarvillagra@gmail.com</span>
                         </div>
-                        <p class="project-role">FULLSTACK DEVELOPER</p>
-                        <p class="project-description">Plataforma de comercio electrónico con integración de Mercado Pago y gestión de inventario para "Pascale Closet"</p>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <span class="label">TELÉFONO</span>
+                            <span class="value">+56 988515143</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <span class="label">DIRECCIÓN</span>
+                            <span class="value">Region Metropolitana, Chile</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Column - Resume Details -->
+            <main class="resume-main">
+                <div class="resume-header">
+                    <h2>Currículum</h2>
+                    <div class="buzz-header">
+                        <img src="assets/images/laser.webp" alt="Buzz Lightyear" class="buzz-small">
+                        <div class="buzz-message-small">Buzz apunta a tu curiosidad tecnológica</div>
+                    </div>
+                </div>
+
+                <!-- Profile Section -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        Perfil
+                    </h3>
+                    <p class="profile-text">
+                        Desarrollador full stack egresado de INACAP, especializado en crear aplicaciones 
+                        web modernas y escalables. Dominio de tecnologías como JavaScript, React y Node.js 
+                        para el desarrollo frontend y backend, complementado con experiencia en PHP y Python. 
+                        Manejo de bases de datos relacionales (PostgreSQL, MySQL) y Firebase para soluciones 
+                        en tiempo real. Experiencia en el desarrollo de aplicaciones móviles con Kotlin y 
+                        Android Studio. Enfoque en código limpio, interfaces intuitivas y arquitecturas 
+                        eficientes. Comprometido con el aprendizaje continuo y la entrega de soluciones 
+                        tecnológicas de alto impacto.
+                    </p>
+                </section>
+
+                <!-- Education Section -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        Educación
+                    </h3>
+                    <div class="timeline-item">
+                        <h4>JavaScript from scratch, Software Development Academy SDA</h4>
+                        <p class="date">17.09.2022 - 29.01.2023</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Training Finance & S. Alha Institute, ATC</h4>
+                        <p class="date">04.2022 - 05.2022</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>MSC Financial Markets & Banking, Universiteti Luarasi</h4>
+                        <p class="date">11.2020 - 07.2022</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Bachelor of Finance & Banking, Aleksandër Moisiu University of Durrës</h4>
+                        <p class="date">10.2016 - 07.2020</p>
+                    </div>
+                </section>
+
+                <!-- Work Experience Section -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        Experiencia Laboral
+                    </h3>
+                    
+                    <div class="work-experience-grid">
+                        <!-- Alphadocere Projects -->
+                        <div class="work-column">
+                            <h4 class="work-column-title">Alphadocere</h4>
+                            
+                            <!-- Cuidadoras Calbuco -->
+                            <a href="https://cuidadorascalbuco.cl/" class="project-card" target="_blank" rel="noopener noreferrer">
+                                <div class="project-spotlight"></div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3 class="project-title">Cuidadoras Calbuco</h3>
+                                        <span class="project-date">2024</span>
+                                    </div>
+                                    <p class="project-role">FULLSTACK DEVELOPER</p>
+                                    <p class="project-description">Sitio web informativo con panel de administración, gestión de blog e integración con IA para la Agrupación de Cuidadoras.</p>
+                                    
+                                    <div class="project-tech">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
+                                        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" title="MySQL">
+                                        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <!-- Wiki Kreative -->
+                            <a href="https://wiki.alphadocere.cl/frontend/" class="project-card" target="_blank" rel="noopener noreferrer">
+                                <div class="project-spotlight"></div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3 class="project-title">Wiki Kreative</h3>
+                                        <span class="project-date">2024</span>
+                                    </div>
+                                    <p class="project-role">INTEGRACIÓN SYSTEMAUTH</p>
+                                    <p class="project-description">Incorporación del sistema de autenticación SystemAuth a la plataforma wiki existente.</p>
+                                    
+                                    <div class="project-tech">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
+                                        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" title="MySQL">
+                                        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                         
-                        <div class="project-tech">
-                            <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" title="React">
-                            <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL">
+                        <!-- Proyectos Propios -->
+                        <div class="work-column">
+                            <h4 class="work-column-title">Proyectos Propios</h4>
+                            
+                            <!-- Pascale E-Commerce -->
+                            <a href="https://pascale-closet.vercel.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+                                <div class="project-spotlight"></div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3 class="project-title">Pascale E-Commerce</h3>
+                                        <span class="project-date">2023 - 2024</span>
+                                    </div>
+                                    <p class="project-role">FULLSTACK DEVELOPER</p>
+                                    <p class="project-description">Plataforma de comercio electrónico con integración de Mercado Pago y gestión de inventario para "Pascale Closet"</p>
+                                    
+                                    <div class="project-tech">
+                                        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" title="React">
+                                        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL">
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <!-- Cara Rondando -->
+                            <a href="https://github.com/javithorfinn/Cara-rondando-pet-desktop" class="project-card" target="_blank" rel="noopener noreferrer">
+                                <div class="project-spotlight"></div>
+                                <div class="project-content">
+                                    <div class="project-header">
+                                        <h3 class="project-title">Cara Rondando</h3>
+                                        <span class="project-date">2024</span>
+                                    </div>
+                                    <p class="project-role">DESKTOP APPLICATION</p>
+                                    <p class="project-description">Mascota virtual de escritorio interactiva con múltiples modos de movimiento y respuesta a eventos del usuario.</p>
+                                    
+                                    <div class="project-tech">
+                                        <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" title="Python">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Tkinter" title="Tkinter">
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </a>
+                </section>
 
-                <!-- Proyecto 2 -->
-                <a href="https://cuidadorascalbuco.cl/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-spotlight"></div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Cuidadoras Calbuco</h3>
-                            <span class="project-date">2024</span>
-                        </div>
-                        <p class="project-role">FULLSTACK DEVELOPER</p>
-                        <p class="project-description">Sitio web informativo con panel de administración, gestión de blog e integración con IA para la Agrupación de Cuidadoras.</p>
-                        
-                        <div class="project-tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
-                            <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" title="MySQL">
-                            <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
-                        </div>
-                    </div>
-                </a>
+                <!-- Skills Section (Right Side) -->
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <section class="skill-section">
+                        <div class="skill-spotlight"></div>
+                        <h3 class="section-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            Idiomas
+                        </h3>
+                        <ul class="skill-list">
+                            <li>Español - Nativo</li>
+                            <li>Inglés - B1</li>
+                        </ul>
+                    </section>
 
-                <!-- Proyecto 3 -->
-                <a href="#" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-spotlight"></div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Mobile App</h3>
-                            <span class="project-date">2023</span>
-                        </div>
-                        <p class="project-role">FRONTEND DEVELOPER</p>
-                        <p class="project-description">Aplicación móvil para gestión de tareas con sincronización en tiempo real.</p>
-                        
-                        <div class="project-tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" title="Android Studio">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase">
-                        </div>
-                    </div>
-                </a>
+                    <!-- Soft Skills -->
+                    <section class="skill-section">
+                        <div class="skill-spotlight"></div>
+                        <h3 class="section-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            Habilidades Blandas
+                        </h3>
+                        <ul class="skill-list">
+                            <li>Habilidades de comunicación</li>
+                            <li>Atención al detalle</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Resolución de problemas</li>
+                            <li>Adaptabilidad</li>
+                        </ul>
+                    </section>
 
-                <!-- Proyecto 4 -->
-                <a href="https://github.com/javithorfinn/Cara-rondando-pet-desktop" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-spotlight"></div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Cara Rondando</h3>
-                            <span class="project-date">2024</span>
-                        </div>
-                        <p class="project-role">DESKTOP APPLICATION</p>
-                        <p class="project-description">Mascota virtual de escritorio interactiva con múltiples modos de movimiento y respuesta a eventos del usuario.</p>
-                        
-                        <div class="project-tech">
-                            <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" title="Python">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Tkinter" title="Tkinter">
-                        </div>
-                    </div>
-                </a>
+                    <!-- Technical Skills -->
+                    <section class="skill-section">
+                        <div class="skill-spotlight"></div>
+                        <h3 class="section-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            Habilidades Técnicas
+                        </h3>
+                        <ul class="skill-list">
+                            <li>JavaScript, React & Node.js</li>
+                            <li>PHP & Python</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>PostgreSQL, MySQL & Firebase</li>
+                            <li>Kotlin & Android Studio</li>
+                        </ul>
+                    </section>
 
-                <!-- Proyecto 5 -->
-                <a href="https://wiki.alphadocere.cl/frontend/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-spotlight"></div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Wiki Kreative</h3>
-                            <span class="project-date">2024</span>
+                    <!-- Conecta Conmigo -->
+                    <section class="skill-section">
+                        <div class="skill-spotlight"></div>
+                        <h3 class="section-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                            Conecta Conmigo
+                        </h3>
+                        <div class="social-links-grid">
+                            <a href="https://www.linkedin.com/in/javier-tobar-villagra-08b922384/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-link-btn"
+                               aria-label="LinkedIn de Javier Tobar Villagra">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/javithorfinn" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-link-btn"
+                               aria-label="GitHub de Javier Tobar Villagra">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="mailto:Javier.tobarvillagra@gmail.com" 
+                               class="social-link-btn"
+                               aria-label="Enviar correo a Javier Tobar Villagra">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Email</span>
+                            </a>
                         </div>
-                        <p class="project-role">INTEGRACIÓN SYSTEMAUTH</p>
-                        <p class="project-description">Incorporación del sistema de autenticación SystemAuth a la plataforma wiki existente.</p>
-                        
-                        <div class="project-tech">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
-                            <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" title="MySQL">
-                            <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" title="JavaScript">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos Stack - Nuevo Tarjetero -->
-    <section id="proyectos-stack" class="stack-section section">
-        <div class="container">
-            <h2 class="section-title animate">Mis Proyectos Destacados</h2>
-            
-            <div class="stack-container">
-                <div class="card-stack" style="--index: 1;">
-                    <div class="card-content" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <div class="card-inner">
-                            <div class="card-text">
-                                <span class="tag">Backend</span>
-                                <h3>E-Commerce Platform</h3>
-                                <p>Integración de pagos y gestión de inventario con Django REST.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn-card">Ver Proyecto →</a>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
-
-                <div class="card-stack" style="--index: 2;">
-                    <div class="card-content" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <div class="card-inner">
-                            <div class="card-text">
-                                <span class="tag">Mobile</span>
-                                <h3>Android Tasks</h3>
-                                <p>App nativa en Kotlin con sincronización en Firebase.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn-card">Ver Proyecto →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-stack" style="--index: 3;">
-                    <div class="card-content" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);">
-                        <div class="card-inner">
-                            <div class="card-text">
-                                <span class="tag">Frontend</span>
-                                <h3>Web App Dashboard</h3>
-                                <p>Interfaz moderna y responsive con animaciones fluidas.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn-card">Ver Proyecto →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-stack" style="--index: 4;">
-                    <div class="card-content" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <div class="card-inner">
-                            <div class="card-text">
-                                <span class="tag">Full Stack</span>
-                                <h3>Sistema de Gestión</h3>
-                                <p>Dashboard interactivo con reportes en tiempo real usando Python y React.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn-card">Ver Proyecto →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-stack" style="--index: 5;">
-                    <div class="card-content" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);">
-                        <div class="card-inner">
-                            <div class="card-text">
-                                <span class="tag">Design</span>
-                                <h3>UI/UX Portfolio</h3>
-                                <p>Colección de diseños y prototipos interactivos.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn-card">Ver Proyecto →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </main>
         </div>
-    </section>
-
-    <!-- Publicaciones de LinkedIn -->
-    <section id="publicaciones" class="section">
-        <div class="container">
-            <h2 class="section-title animate">Mis Publicaciones en LinkedIn</h2>
-            <div class="linkedin-posts animate">
-                <!-- Las publicaciones se cargan dinamicamente desde data/linkedin-posts.json -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-left">
-            <a href="https://github.com/javithorfinn" target="_blank" rel="noopener noreferrer">javithorfinn</a>
-        </div>
-        <div class="footer-right">
-            <a href="#inicio">Inicio</a>
-            <a href="#projects">Proyectos</a>
-        </div>
-    </footer>
+    </div>
 
     <!-- Scripts como modulos -->
-    <script type="module" src="js/main.mjs"></script>
+    <script type="module" src="js/resume.mjs"></script>
 </body>
 </html>
