@@ -223,6 +223,51 @@ body {
     color: var(--color-text-muted);
 }
 
+/* ===== Education Grid ===== */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.education-column {
+    background: rgba(51, 65, 85, 0.4);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-subtitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-list li {
+    padding: 0.4rem 0;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.education-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
 /* ===== Skills Grid ===== */
 .skills-grid {
     display: grid;
@@ -383,6 +428,10 @@ body {
     }
 
     .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
         grid-template-columns: 1fr;
     }
 
