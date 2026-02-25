@@ -106,6 +106,26 @@ body {
     color: var(--color-text);
 }
 
+.visit-counter {
+    margin-top: 0.75rem;
+    text-align: left;
+}
+
+.visit-counter .label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.visit-counter img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===== Resume Main Section (Right Column) ===== */
 .resume-main {
     background: rgba(30, 41, 59, 0.8);
@@ -166,7 +186,7 @@ body {
 }
 
 .section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .section-title {
@@ -227,8 +247,8 @@ body {
 .education-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .education-column {
@@ -273,7 +293,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
-    margin-top: 1rem;
+    margin-top: 0.35rem;
 }
 
 .skill-section {
@@ -534,14 +554,14 @@ body {
 .work-experience-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .work-column {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .work-column-title {
